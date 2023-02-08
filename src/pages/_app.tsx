@@ -5,11 +5,11 @@ import { ExampleProvider } from '../context/exampleContext'
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <div style={{ display: 'flex' }}>
-      <div style={{ width: '10%', border: '2px solid black'}}>
+    <div style={{ display: 'flex', flexDirection: 'column' }}>
+      <div style={{ width: '100%' }}>
         <NavigationMenu/>
       </div>
-      <div style={{ width: '90%'}}>
+      <div style={{ width: '100%'}}>
         <ExampleProvider>
           <Component {...pageProps} />
         </ExampleProvider>

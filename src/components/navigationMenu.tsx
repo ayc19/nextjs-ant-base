@@ -45,7 +45,6 @@ export default function NavigationMenu() {
   return (
     <Menu
       onClick={onClick}
-      style={{ width: '100%', height: '100vh' }}
       mode="vertical"
       items={items}
     />
